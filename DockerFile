@@ -1,0 +1,7 @@
+# FROM node:alphine
+FROM node:latest
+WORKDIR /Capp
+COPY package.json .
+RUN npm i
+COPY . .
+CMD ["npm","start"]
